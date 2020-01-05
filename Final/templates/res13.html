@@ -1,0 +1,25 @@
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>图13：老年人健康情况</h2>
+<div>
+    {{ the_plot_all13|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<div>
+    <P>
+        由图可以看出，老年人口健康和不健康站绝大部分。不健康但是生活能治理的占小一部分，生活完全不能治理的只占小部分。
+        这说明虽然我国的老龄人口较多， 但是大部分是健康且有自理的能力的。
+    </P>
+</div>
+
+ {{ the_res13|safe }}
+
+{% endblock %}
+</html>

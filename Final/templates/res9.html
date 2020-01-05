@@ -1,0 +1,25 @@
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h2>图9：中国的生育情况</h2>
+<div>
+    {{ the_plot_all9|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<div>
+  <p>由图可以看出，<b>1950-1984年</b>，25-29岁的女士生育情况总是位于第一；但是到1985年后，20-24岁的女士反而超过了25-29岁的女士成为第一。
+      据了解，1982中国才恢复中断了18年的人口普查和开始有了较为正规的人口登记制度。 除此之外，1985年是改革承前启后的一个时间点。
+      80年代中期，我国的科技、经济等领域的改革陆续启动。受改革的影响，女性的思想也在悄然发生变化。</p>
+</div>
+
+ {{ the_res9|safe }}
+
+{% endblock %}
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>图2：城镇农村人均可支配收入</h2>
+
+
+<div style="float:left">
+    {{ the_plot_all2|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<p style="float:left">
+由图可以看出，城镇农村的收入和支出都在逐年上升，而且增长的趋势较为稳定和平缓，但是城镇和乡村的收入差距还是存在一定的差距。</p>
+
+<div>
+    {{ the_res2|safe }}
+</div>
+
+{% endblock %}
+</html>

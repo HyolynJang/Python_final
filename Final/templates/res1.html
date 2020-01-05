@@ -1,0 +1,33 @@
+
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+
+
+<h2>图1：GDP、农村城市低保的对比</h2>
+
+<div  style="float:left">
+    {{ the_plot_all1|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<P style="float:left">由图可看出，我国的GDP呈现的是逐年上升的稳定趋势。随着GDP的增长，历年低保人数在逐渐减少，城市低保人数减少迅速，这说明国家所采取的措施有一定的成效。但农村仍然存在很多低保户。</P>
+
+<div>
+    <text>GDP指数</text>
+    {{ the_res1|safe }}
+    <text>乡村低保人数</text>
+    {{ the_res4|safe }}
+    <text>城市低保人数</text>
+    {{ the_res5|safe }}
+</div>
+
+{% endblock %}
+<a href="#" class="btn-to-top" style="float:right"><img src="static/scroll-top.gif" alt="scroll-top"></a>
+</html>

@@ -1,0 +1,26 @@
+
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>图4：历年中国各省农村最低生活保障人数</h2>
+
+
+<div>
+    {{ the_plot_all4|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<p>从历年农村分省最低保障人数分布来看，西南地区人数较多，但近年来迅速减少，其中贵州减少人数最多，内陆地区部分省份出现的人数不减反而增加，其中新疆地区最为严重。</p>
+
+<div>
+    {{ the_res4|safe }}
+</div>
+
+
+{% endblock %}
+</html>

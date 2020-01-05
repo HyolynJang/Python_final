@@ -1,0 +1,28 @@
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h2>图6：城乡就业人员的变化</h2>
+<div id="fp1">
+    {{ the_plot_all6|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+  <p>
+    由图我们可以看出，城镇就业人员逐年下降；而农村就业人员则相反逐年上升；城乡的就平均人数是趋于平缓的。 <br>
+    而这跟国家政策和社会现象的改变时有一定的相关性。随着我国新型城镇化建设的加快，城乡一体化程度提高，农村剩余劳动力也开始大量向城镇转移。</p>
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回'></a>
+</div>
+
+
+{{ the_res6|safe }}
+
+
+{% endblock %}
+</html>

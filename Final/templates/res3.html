@@ -1,0 +1,27 @@
+
+<html lang="en">
+
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>图3：2011年分省GDP</h2>
+
+
+<div style="float:left">
+    {{ the_plot_all3|safe }}
+</div>
+
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<P style>从历年分省GDP可以看出：沿海地GDP增长速度较快，而内陆地区较为缓慢，其中山东、广东、江苏发展迅速，内陆地区如四川、河南发展迅速。成效。但农村仍然存在很多低保户。</P>
+
+<div>
+    {{ the_res3|safe }}
+</div>
+
+{% endblock %}
+</html>

@@ -1,0 +1,26 @@
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h2>图8：历年来中国的出生率变化趋势</h2>
+
+<div>
+    {{ the_plot_all8|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<div>
+    <p><b>1950年到1975年</b>，中国虽然生育率有升有降，但基本处于高生育率的状态，这段时期，中国有过发展，有过进步，但是也充满迷茫，主要的重点还是放在发展经济和稳定社会等层面，对生育情况还未做出太大的调整；
+但到了1982年，国家各方面都开始发展良好时， 开始全面实施计划生育，这期间生育率持续下降，逐渐趋于平缓状态，成为了低生育率的国家；这也证明中国的劳动力人口在逐年下降，人口基数趋于平缓。
+</p>
+</div>
+
+ {{ the_res8|safe }}
+
+{% endblock %}
+</html>

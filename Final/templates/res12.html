@@ -1,0 +1,26 @@
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>图12：抚养比情况</h2>
+
+<div>
+    {{ the_plot_all12|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<div>
+    <p>
+        由图发现，少儿的抚养比在逐年下降，而老年的抚养比在逐年上升，总的抚养比也是出于逐年上升状态。
+        这说明我国的生育率水平偏低，但是老龄化进程加速，劳动人口所需要抚养的老年逐年上升，老年的抚养压力越来越大，生小孩的意愿越来越低。
+    </p>
+</div>
+
+  {{ the_res12|safe }}
+
+{% endblock %}
+</html>

@@ -1,0 +1,26 @@
+
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h2>图5：历年中国各省城市最低生活保障人数</h2>
+
+<div id="fp1">
+    {{ the_plot_all5|safe }}
+</div>
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+<p>从历年城市分省最低保障人数分布来看，四川、黑龙江的地区人数较为多，但近年来迅速减少。各省地区最低保障人数大幅度减少。从整体上看。城市脱贫人数较为明显。
+</p>
+
+<div>
+    {{ the_res5|safe }}
+</div>
+
+
+{% endblock %}
+</html>

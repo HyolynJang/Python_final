@@ -1,0 +1,22 @@
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>图14：结婚离婚堆叠图</h2>
+<div>
+    {{ the_plot_all14|safe }}
+</div>
+
+<div style="float:left">
+    <input onclick="history.go(-1)" type="button" value='返回' class="btn f-color-control"></a>
+</div>
+
+
+<p>由图看出，我国的结婚登记人数呈现“过山车”的局势，2009年是2013年是上升阶段，但是2013年后又开始下降。根据调查，很多人在13年选择结婚是因为该数字存在吉祥的寓意。“1314”是对爱情的保证，也是对自己爱情的祝福；
+    而我国的离婚登记人数却一直在上升的趋势。人们对爱情的要求随着大环境的改变而产生变化，人们对爱情的高要求和本身的就业等压力是离婚人数逐年上升的主要原因。</p>
+
+ {{ the_res14|safe }}
+
+{% endblock %}
+</html>

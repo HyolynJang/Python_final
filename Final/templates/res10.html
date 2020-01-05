@@ -1,0 +1,38 @@
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>图10：人口老龄化现状</h2>
+
+
+<input onclick="history.go(-1)" type="button" value='返回' style="float：right" class="btn f-color-control"></a>
+
+
+<h3>第五次人口普查</h3>
+    {{ the_plot_all10|safe }}
+
+
+<span style="float：right">
+    {{ the_res10|safe }}
+</span>
+
+   <h3>第六次人口普查</h3>
+   {{ the_plot_all11|safe }}
+
+
+<span style="float：right">
+ {{ the_res11|safe }}
+</span>
+
+<div>
+    <p>第五次人口的普查呈现静止型，各年龄组人口比重大致均衡；而第六次人口普查底部收缩，上部变宽。这反映少年儿童人口比重缩小， 老年人口比重增大。
+        第五次和第六次人口普查反映了我国的人口结构从“金字塔”逐渐变成了“倒金字塔”。
+        说明我国老龄化越来越严重，劳动力人口供给在不断减少。</p>
+</div>
+
+
+
+
+{% endblock %}
+</html>
