@@ -2,27 +2,29 @@
 * 所有的html文档存放于templates文件下，并将html格式的图分别置于fp与llh两个文件夹下
 * base.html为results.html的基模板，其他res.html均对应不同选项的输出页面
 
-1.Templates
-    * fp（扶贫）
-        1.fp_dbcomparison.html （GDP、农村城市低保的对比）
-        2.fp_czkzp.html （城镇农村人均可支配收入）
-        3.fp_gdp.html (2011年分省GDP)
-        4.fp_rural_security.html （历年中国各省农村最低生活保障人数）
-        5.fp_city_security.html（历年中国各省城市最低生活保障人数）
-        6.fp_job_trend.html （乡就业人员的变化）
-    * llh（老龄化）
-        1.llh_rate_trend_gb.html 历年来世界的出生率变化趋势
-        2.llh_rate_trend_cn.html 历年来中国的出生率变化趋势
-        3.llh_birth.html 中国的生育情况
-        4.llh_5_population.html 第五次人口普查
-        5.llh_6_population.html 第六次人口普查
-        6.llh_adopted_rate 抚养比情况
-        7.llh_health.html 老年人健康情况
-        8.llh_divorce.html 我国结婚离婚登记情况
+Templates
+- 📌fp（扶贫）
+- 1.fp_dbcomparison.html （GDP、农村城市低保的对比）
+- 2.fp_czkzp.html （城镇农村人均可支配收入）
+- 3.fp_gdp.html (2011年分省GDP)
+- 4.fp_rural_security.html （历年中国各省农村最低生活保障人数）
+- 5.fp_city_security.html（历年中国各省城市最低生活保障人数）
+- 6.fp_job_trend.html （乡就业人员的变化）
+- 📌llh（老龄化）
+- 1.llh_rate_trend_gb.html 历年来世界的出生率变化趋势
+- 2.llh_rate_trend_cn.html 历年来中国的出生率变化趋势
+- 3.llh_birth.html 中国的生育情况
+- 4.llh_5_population.html 第五次人口普查
+- 5.llh_6_population.html 第六次人口普查
+- 6.llh_adopted_rate.html 抚养比情况
+- 7.llh_health.html 老年人健康情况
+- 8.llh_divorce.html 我国结婚离婚登记情况
+
+* 还有以下html文件:
 
 base.html /results.html / res1.html / res2.html / res3.html / res4.html / res5.html / res6.html /res7.html /res8.html /
 res9.html / res10.html / res12.html / res13.html / res14.html 
-* 其中res1到res14分别按顺序对应上面fp与llh文件下的表
+* （其中res1到res14分别按顺序对应上面fp与llh文件下的表）
 
 ### Python档描述📍
 主要使用了flask与pandas模块
