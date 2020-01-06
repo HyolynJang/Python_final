@@ -12,8 +12,8 @@ app = Flask(__name__)
 df1 = pd.read_csv('./static/data/fp/gdp.csv', encoding='utf-8-sig', sep=',')
 df2 = pd.read_csv('./static/data/fp/city_rural_income.csv', encoding='utf-8-sig', sep=',')
 df3 = pd.read_csv('./static/data/fp/province_gdp.csv', encoding='utf-8-sig', sep=',')
-df4 = pd.read_csv('./static/data/fp/rural_security.csv',encoding='utf-8-sig', sep=',')
-df5 = pd.read_csv('./static/data/fp/city_security.csv')
+df4 = pd.read_csv('./static/data/fp/rural_security.csv', encoding='utf-8-sig', sep=',')
+df5 = pd.read_csv('./static/data/fp/city_security.csv', encoding='utf-8',sep=',')
 df6 = pd.read_csv('./static/data/fp/employed.csv', encoding='utf-8',sep=',')
 
 
@@ -22,7 +22,7 @@ df7 = pd.read_csv('./static/data/llh/llh_birth_rate_gb.csv', encoding='utf-8-sig
 df8 = pd.read_csv('./static/data/llh/llh_birth_rate_cn.csv', encoding='utf-8-sig', sep=',')
 df9 = pd.read_csv('./static/data/llh/llh_birth_cn.csv', encoding='utf-8-sig', sep=',')
 df10 = pd.read_excel('./static/data/llh/5_population_sex_rate.xlsx')
-df11 = pd.read_csv('./static/data/llh/6_population_sex_rate.csv')
+df11 = pd.read_csv('./static/data/llh/6_population_sex_rate.csv', encoding='utf-8',sep=',')
 df12 = pd.read_csv('./static/data/llh/llh_adopted_rate.csv', encoding='utf-8',sep=',')
 df13 = pd.read_csv('./static/data/llh/llh_health.csv', encoding='utf-8',sep=',')
 df14 = pd.read_csv('./static/data/llh/llh_married.csv', encoding='utf-8',sep=',')
@@ -43,7 +43,7 @@ def final_run_2019():
 
 @app.route('/entry',methods=['POST'])
 def run_select() -> 'html':
-
+    """reture the corresponding value according to the selected item"""
     # 故事1
     data_str1 = df1.to_html()
     data_str2 = df2.to_html()
